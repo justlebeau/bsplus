@@ -101,9 +101,9 @@ bs_append.bsplus_accordion <- function(tag, title, content, show=TRUE,...){
   collapse <- bs_set_aria(collapse, labelledby = id_heading)
 
   # if this is the first panel, set it as open (add option to suppress)
-  if (identical(n_panel, 0L)& show){
-    collapse <- htmltools::tagAppendAttributes(collapse, class = "in")
-  }
+  ##if (identical(n_panel, 0L)& show){
+  ##  collapse <- htmltools::tagAppendAttributes(collapse, class = "in")
+  ##}
 
   # compose the panel
   panel <-
